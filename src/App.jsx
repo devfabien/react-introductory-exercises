@@ -1,12 +1,11 @@
-import JokeRender from "./components/exercise8/jokeRender"
+import JokeRender from "./components/exercise8/jokeRender";
 
 function App() {
-
   return (
     <>
-    <JokeRender/>
+      <JokeRender />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
