@@ -1,12 +1,11 @@
-import Form from "./components/exercise7/form"
+import Form from "./components/exercise7/form";
 
 function App() {
-
   return (
     <>
-    <Form/>
+      <Form />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
