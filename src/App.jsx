@@ -1,12 +1,11 @@
-import List from "./components/exercise5/list"
+import Hello from "./components/exercise1/hello";
 
 function App() {
-
   return (
     <>
-    <List/>
+      <Hello />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
