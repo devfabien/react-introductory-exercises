@@ -1,5 +1,6 @@
 import Joke from "./joke";
 import jokes from "./jokes.json";
+
 export default function JokeRender() {
   const JOKE = jokes.map((joke) => (
     <Joke key={joke.id} setup={joke.setup} punchline={joke.punchline} />
