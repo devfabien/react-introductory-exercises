@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import UserComponent from "./userComponent";
+
 export default function Fetch() {
   const [user, setUser] = useState([]);
   const [random, setRandom] = useState(0);
+
   useEffect(
     function () {
       fetch("https://random-data-api.com/api/users/random_user?size=10")
@@ -12,6 +14,7 @@ export default function Fetch() {
     },
     [random]
   );
+
   let data = user.map((item) => (
     <UserComponent
       key={item.id}
@@ -26,6 +29,7 @@ export default function Fetch() {
       gender={item.gender}
     />
   ));
+
   return (
     <div className="flex flex-col items-center p-10">
       <button
