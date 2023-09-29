@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
 export default function ButtonComponent() {
   const [count, setCount] = useState(0);
   function addCount() {
