@@ -17,7 +17,10 @@ export default function Form() {
   function handleSubmit(event) {
     event.preventDefault()
     alert(`Hello ${formData.firstName} ${formData.lastName}!`);
-    setFormData({})
+    setFormData({
+      firstName: "",
+    lastName: "",
+    })
   }
   return (
     <div className="flex p-10 justify-center">
