@@ -1,9 +1,8 @@
-import Hello from "./components/exercise1/hello";
-
+import List from "./components/exercise5/list";
 function App() {
   return (
     <>
-      <Hello />
+      <List />
     </>
   );
 }
