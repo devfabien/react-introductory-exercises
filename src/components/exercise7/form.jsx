@@ -14,8 +14,10 @@ export default function Form() {
       };
     });
   }
-  function handleSubmit() {
+  function handleSubmit(event) {
+    event.preventDefault()
     alert(`Hello ${formData.firstName} ${formData.lastName}!`);
+    setFormData({})
   }
   return (
     <div className="flex p-10 justify-center">
