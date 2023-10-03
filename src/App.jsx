@@ -1,9 +1,5 @@
-import ButtonComponent from "./components/exercise4/buttonComponent";
+import ButtonComponent from "./components/exercise4/ButtonComponent";
 
-function App() {
-  return (
-      <ButtonComponent />
-  );
+export default function App() {
+  return <ButtonComponent />;
 }
-
-export default App;
