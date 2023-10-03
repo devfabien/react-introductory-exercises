@@ -1,6 +1,4 @@
-import Hello from "./components/exercise1/hello";
-function App() {
+import Hello from "./components/exercise1/Hello";
+export default function App() {
   return <Hello />;
 }
-
-export default App;
