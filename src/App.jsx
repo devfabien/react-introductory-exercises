@@ -1,11 +1,11 @@
-import Button from "./components/exercise3/Button";
+import ButtonComponent from "./components/exercise3/ButtonComponent";
 
 export default function App() {
   return (
     <div className=" p-5 flex justify-center gap-5">
-      <Button number={1} />
-      <Button number={2} />
-      <Button number={3} />
+      <ButtonComponent number={1} />
+      <ButtonComponent number={2} />
+      <ButtonComponent number={3} />
     </div>
   );
 }
