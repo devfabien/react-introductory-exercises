@@ -1,11 +1,7 @@
 import JokeRender from "./components/exercise8/jokeRender";
 
 function App() {
-  return (
-    <>
-      <JokeRender />
-    </>
-  );
+  return <JokeRender />;
 }
 
 export default App;
