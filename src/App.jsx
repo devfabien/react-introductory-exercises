@@ -1,5 +1,5 @@
-import ButtonComponent from "./components/exercise4/ButtonComponent";
+import ButtonComponents from "./components/exercise4/ButtonComponents";
 
 export default function App() {
-  return <ButtonComponent />;
+  return <ButtonComponents />;
 }
