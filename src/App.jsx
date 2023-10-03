@@ -1,7 +1,5 @@
-import Form from "./components/exercise7/form";
+import Form from "./components/exercise7/Form";
 
-function App() {
+export default function App() {
   return <Form />;
 }
-
-export default App;
