@@ -1,4 +1,4 @@
-export default function UserComponent({
+export default function UserDisplayComponent({
   avatar,
   firstName,
   lastName,

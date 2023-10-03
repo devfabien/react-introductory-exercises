@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import UserComponent from "./UserComponent";
+import UserDisplayComponent from "./UserDisplayComponent";
 
 export default function Fetch() {
   const [user, setUser] = useState([]);
@@ -10,13 +10,12 @@ export default function Fetch() {
       fetch("https://random-data-api.com/api/users/random_user?size=10")
         .then((res) => res.json())
         .then((data) => setUser(data));
-      console.log(user);
     },
     [random]
   );
 
   const DATA = user.map((item) => (
-    <UserComponent
+    <UserDisplayComponent
       key={item.id}
       firstName={item.first_name}
       lastName={item.last_name}
