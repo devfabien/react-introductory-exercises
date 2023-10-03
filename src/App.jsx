@@ -1,9 +1,5 @@
-function App() {
+import UserClick from "./components/exercise2/UserClick";
 
-  return (
-    <>
-    </>
-  )
+export default function App() {
+  return <UserClick />;
 }
-
-export default App
