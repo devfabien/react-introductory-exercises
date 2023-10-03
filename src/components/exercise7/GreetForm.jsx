@@ -1,6 +1,6 @@
 import { useState } from "react";
-
-export default function Form() {
+ 
+export default function GreetForm() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",

@@ -1,5 +1,5 @@
-import Form from "./components/exercise7/Form";
+import GreetForm from "./components/exercise7/GreetForm";
 
 export default function App() {
-  return <Form />;
+  return <GreetForm />;
 }
