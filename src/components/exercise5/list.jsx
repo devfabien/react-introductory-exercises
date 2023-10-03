@@ -1,11 +1,12 @@
+import {v4 as uuidv4} from "uuid";
 export default function List() {
-  const animals = ["dog", "cat", "chicken", "cow", "sheep", "horse"];
-  let animalList = animals.map((animal, index) => (
-    <li key={index}>{animal}</li>
+  const ANIMALS = ["dog", "cat", "chicken", "cow", "sheep", "horse"];
+  const ANIMAL_LIST = ANIMALS.map(animal => (
+    <li key={uuidv4()}>{animal}</li>
   ));
   return (
     <div className="p-7">
-      <ul className="list-disc">{animalList}</ul>
+      <ul className="list-disc">{ANIMAL_LIST}</ul>
     </div>
   );
 }

@@ -1,6 +1,4 @@
-import List from "./components/exercise5/list";
-function App() {
+import List from "./components/exercise5/List";
+export default function App() {
   return <List />;
 }
-
-export default App;
