@@ -1,7 +1,5 @@
-import JokeRender from "./components/exercise8/jokeRender";
+import JokeRender from "./components/exercise8/JokeRender";
 
-function App() {
+export default function App() {
   return <JokeRender />;
 }
-
-export default App;

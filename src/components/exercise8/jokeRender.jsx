@@ -1,4 +1,4 @@
-import Joke from "./joke";
+import Joke from "./Joke";
 import jokes from "./jokes.json";
 
 export default function JokeRender() {
