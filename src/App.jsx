@@ -1,4 +1,5 @@
-import Hello from "./components/exercise1/Hello";
+import HelloWorld from "./components/exercise1/HelloWorld";
+
 export default function App() {
-  return <Hello />;
+  return <HelloWorld />;
 }
