@@ -1,6 +1,6 @@
-import Button from "./components/exercise3/button";
+import Button from "./components/exercise3/Button";
 
-function App() {
+export default function App() {
   return (
     <div className=" p-5 flex justify-center gap-5">
       <Button number={1} />
@@ -9,5 +9,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
