@@ -5,11 +5,7 @@ function App() {
   const animal = data.map((item, index) => (
     <AnimalList id={index} name={item.name} image={item.url} />
   ));
-  return (
-    <>
-      <div>{animal}</div>
-    </>
-  );
+  return <div>{animal}</div>;
 }
 
 export default App;
