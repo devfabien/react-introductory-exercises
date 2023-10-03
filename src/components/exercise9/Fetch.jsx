@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import UserComponent from "./userComponent";
+import UserComponent from "./UserComponent";
 
 export default function Fetch() {
   const [user, setUser] = useState([]);
@@ -15,7 +15,7 @@ export default function Fetch() {
     [random]
   );
 
-  let data = user.map((item) => (
+  const DATA = user.map((item) => (
     <UserComponent
       key={item.id}
       firstName={item.first_name}
@@ -38,7 +38,7 @@ export default function Fetch() {
       >
         Fetch Random
       </button>
-      <div className="flex flex-wrap gap-10 bg-green-300 p-2">{data}</div>
+      <div className="flex flex-wrap gap-10 bg-green-300 p-2">{DATA}</div>
     </div>
   );
 }

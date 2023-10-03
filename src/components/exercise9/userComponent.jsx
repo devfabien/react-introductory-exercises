@@ -1,18 +1,28 @@
-export default function UserComponent(props) {
+export default function UserComponent({
+  avatar,
+  firstName,
+  lastName,
+  userName,
+  gender,
+  tel,
+  email,
+  employment,
+  skill,
+}) {
   return (
     <div className="group h-96 w-80 [perspective:1000px] ">
       <div className="relative h-full bg-white w-full rounded-xl shadow-xl transition-all duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
         <div className="absolute inset-0">
           <img
             className="h-full w-full rounded-xl object-cover shadow-md shadow-black/40"
-            src={props.avatar}
+            src={avatar}
             alt="user avatar"
           />
           <div className="absolute bottom-0 group-hover:hidden bg-white w-full p-2 rounded-b-xl">
             <h1 className="font-bold py-2">
-              {props.firstName} {props.lastName}
+              {firstName} {lastName}
             </h1>
-            <h1 className=" py-1">{props.employment}</h1>
+            <h1 className=" py-1">{employment}</h1>
           </div>
         </div>
         <div className="absolute inset-0 h-full w-full rounded-xl bg-black/60 px-4 text-slate-100 [transform:rotateY(180deg)] [backface-visibility:hidden]">
@@ -21,19 +31,19 @@ export default function UserComponent(props) {
               More Information
             </h1>
             <h1 className="text-lg py-1">
-              <span className="font-bold">UserName:</span> {props.userName}
+              <span className="font-bold">UserName:</span> {userName}
             </h1>
             <h1 className="text-lg py-1">
-              <span className="font-bold">email:</span> {props.email}
+              <span className="font-bold">email:</span> {email}
             </h1>
             <p className="py-1">
-              <span className="font-bold">Gender:</span> {props.gender}
+              <span className="font-bold">Gender:</span> {gender}
             </p>
             <p className="py-1">
-              <span className="font-bold">Tel:</span> {props.tel}
+              <span className="font-bold">Tel:</span> {tel}
             </p>
             <p className="py-1">
-              <span className="font-bold">Key skill:</span> {props.skill}
+              <span className="font-bold">Key skill:</span> {skill}
             </p>
           </div>
         </div>

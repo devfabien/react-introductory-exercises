@@ -1,6 +1,5 @@
-import Fetch from "./components/exercise9/fetching";
+import Fetch from "./components/exercise9/Fetch";
 
-function App() {
+export default function App() {
   return <Fetch />;
 }
-export default App;
