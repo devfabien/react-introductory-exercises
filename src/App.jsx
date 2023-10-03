@@ -1,4 +1,4 @@
-import List from "./components/exercise5/List";
+import AnimalList from "./components/exercise5/AnimalList";
 export default function App() {
-  return <List />;
+  return <AnimalList />;
 }

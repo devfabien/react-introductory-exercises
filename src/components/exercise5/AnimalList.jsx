@@ -1,5 +1,5 @@
 import {v4 as uuidv4} from "uuid";
-export default function List() {
+export default function AnimalList() {
   const ANIMALS = ["dog", "cat", "chicken", "cow", "sheep", "horse"];
   const ANIMAL_LIST = ANIMALS.map(animal => (
     <li key={uuidv4()}>{animal}</li>
