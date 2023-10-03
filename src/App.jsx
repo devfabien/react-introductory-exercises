@@ -1,7 +1,5 @@
-import UserClick from "./components/exercise2/captureUserClick";
+import UserClick from "./components/exercise2/UserClick";
 
-function App() {
+export default function App() {
   return <UserClick />;
 }
-
-export default App;
